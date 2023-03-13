@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should render title with blue color 1`] = `
+.c0 {
+  background-color: green;
+}
+
+.c1 {
+  color: red;
+}
+
+<div
+  class="c0"
+>
+  <h1
+    class="c1"
+  >
+    Main Title
+  </h1>
+</div>
+`;

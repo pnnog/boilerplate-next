@@ -1,11 +1,12 @@
-type MainProps = {
+import * as S from './styles';
+export type MainProps = {
   title: string;
 };
 
 export default function Main({ title }: MainProps) {
   return (
-    <div>
-      <h1>{title}</h1>
-    </div>
+    <S.Wrapper>
+      <S.Title>{title}</S.Title>
+    </S.Wrapper>
   );
 }
