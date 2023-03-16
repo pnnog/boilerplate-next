@@ -1,4 +1,5 @@
 import * as S from './styles';
+
 export type MainProps = {
   title: string;
 };

@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { renderWithTheme } from 'utils/tests/helper';
 import Main from '.';
 
 const props = {
@@ -7,7 +8,7 @@ const props = {
 
 describe('Main', () => {
   it('should render main title', () => {
-    render(<Main {...props} />);
+    renderWithTheme(<Main {...props} />);
     expect(
       screen.getByRole('heading', {
         name: /Main Title/i
@@ -15,13 +16,22 @@ describe('Main', () => {
     ).toBeInTheDocument();
   });
 
-  it('should render title with blue color', () => {
-    const { container } = render(<Main {...props} />);
-
+  it('should render title with white color', () => {
+    renderWithTheme(<Main {...props} />);
     expect(screen.getByRole('heading', { name: props.title })).toHaveStyle({
-      color: 'red'
+      color: '#FAFAFA'
+    });
+  });
+
+  it('should render main with bg color', () => {
+    const { container } = renderWithTheme(<Main {...props} />);
+
+    expect(
+      screen.getByRole('heading', { name: props.title }).parentNode
+    ).toHaveStyle({
+      background: '#0000FF'
     });
 
-    expect(container.firstElementChild).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

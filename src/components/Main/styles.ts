@@ -1,8 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-color: green;
+  ${({ theme }) => css`
+    background-color: ${theme.colors.mainBg};
+  `}
 `;
+
 export const Title = styled.h1`
-  color: red;
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+  `}
 `;

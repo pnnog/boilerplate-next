@@ -26,8 +26,8 @@ export default {
   colors: {
     primary: '#FFFFFF',
     secondary: '#FFFFFF',
-    mainBg: '#FFFFFF',
-    white: '#',
+    mainBg: '#0000FF',
+    white: '#FAFAFA',
     black: '#FFFFFF',
     lightGray: '#EAEAEA',
     gray: '#FFFFFF',
