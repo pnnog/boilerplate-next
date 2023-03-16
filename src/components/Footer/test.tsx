@@ -5,10 +5,12 @@ import Footer from '.';
 
 describe('<Footer />', () => {
   it('should render heading', () => {
-    renderWithTheme(<Footer />);
+    const { container } = renderWithTheme(<Footer />);
 
     expect(
       screen.getByRole('heading', { name: /Footer/i }).parentNode
     ).toHaveStyle({ background: '#FFFFFF' });
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
