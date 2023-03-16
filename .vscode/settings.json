@@ -10,7 +10,11 @@
     "Neue",
     "plopfile",
     "Roboto",
-    "Segoe"
+    "Segoe",
+    "xlarge",
+    "xsmall",
+    "xxlarge",
+    "xxsmall"
   ],
 
   // Workbench
