@@ -13,7 +13,10 @@ export default {
       "FonteDoProjeto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
     normal: 400,
-    bold: 600,
+    medium: 500,
+    semiBold: 600,
+    bold: 700,
+
     sizes: {
       xsmall: '1.2rem',
       small: '1.4rem',
@@ -26,10 +29,10 @@ export default {
   colors: {
     primary: '#FFFFFF',
     secondary: '#FFFFFF',
-    mainBg: '#0000FF',
-    white: '#FAFAFA',
+    mainBg: '#FFFFFF',
+    white: '#FFFFFF',
     black: '#FFFFFF',
-    lightGray: '#EAEAEA',
+    lightGray: '#FFFFFF',
     gray: '#FFFFFF',
     darkGray: '#FFFFFF'
   },
